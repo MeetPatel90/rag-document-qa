@@ -8,8 +8,15 @@ Upload documents and ask questions using AI.
    ```bash
    pip install -r requirements.txt
    ```
+2. Install OLlama and get Groq API Key:
+   - **Groq**: Get free API key from [console.groq.com](https://console.groq.com)
+   - **Ollama**: 
+     - Install from [ollama.ai](https://ollama.ai)(change DNS if installing via Homebrew and get error)
+     - Run `ollama serve`(Keep this terminal open)
+     - Run `ollama pull tinyllama`(Download tinyllama in another terminal)
+     - In app sidebar, set host to `http://localhost:11434`(by default, change if not)
 
-2. **Run the app:**
+3. **Run the app:**
    ```bash
    streamlit run app.py
    ```
@@ -19,12 +26,9 @@ Upload documents and ask questions using AI.
 ## Usage
 
 1. Choose AI provider in sidebar:
-   - **Groq**: Get free API key from [console.groq.com](https://console.groq.com)
+   - **Groq**: Add API key and choose Model, then use Test.  
    - **Ollama**: 
-     - Install from [ollama.ai](https://ollama.ai)
-     - Run `ollama serve`
-     - Run `ollama pull tinyllama`
-     - In app sidebar, set host to `http://localhost:11434`
+     - In app sidebar, set host to `http://localhost:11434`(by default, change if not), then use Test
 
 2. Upload a PDF or TXT file
 
