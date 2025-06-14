@@ -1,0 +1,8 @@
+streamlit
+sentence-transformers
+groq
+PyMuPDF
+numpy
+scikit-learn
+faiss-cpu
+requests
